@@ -1,0 +1,9 @@
+<div class="all-category">
+    <h3 class="cat-heading">
+        <i class="fa fa-bars mr-2" aria-hidden="true"></i>CATEGORIES <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+    <ul class="main-category list-group">
+        <li *ngFor="let cat of categoryList">
+            <a href="#">{{cat.categoryName}}<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+</div>

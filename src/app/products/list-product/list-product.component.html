@@ -1,0 +1,13 @@
+<div class="container-fluid p-2">
+    <div class="row m-2 p-2">
+        <div class="card p-3">
+            <section class="padding-bottom-sm">
+                <div class="row row-sm">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6" *ngFor="let p of productList">
+                        <app-product-card [inputData]="p"></app-product-card>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

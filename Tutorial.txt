@@ -1,0 +1,96 @@
+1. Json Server Install: npm install -g json-server
+2. Json Server Run: json-server --watch db.json
+3. Lazy Loading: ng g m products --route products --module app.module
+
+# View product 
+
+1. For single product view need to add id on path.
+Example:   { path: 'view-product/:id', component: ViewProductComponent },
+
+2. Import Activated Route in Contstructor
+Example:  constructor(private activatedRoute: ActivatedRoute) { }
+
+3. Method ngOnInit
+Example:  productId = 0;
+
+  constructor(private activatedRoute: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    this.activatedRoute.params.subscribe(data=>{
+      this.productId = data.id;
+    });
+  }
+
+4. Service Make
+Example: ng g service serviceName
+ 
+    4.1 Import httpClientModule in app module this
+    Example: import { HttpClientModule } from '@angular/common/http';
+
+    4.2 Import httpClient in Service
+    Example: import { HttpClient } from '@angular/common/http';
+    * constructor(private httpClient: HttpClient) { }
+
+
+5. Get category
+    5.1 Create category Object (model)
+    Example: export interface Category {
+                id : number;
+                categoryName : string;
+                description: string;
+                categoryBanner: string;
+                }
+    5.2 Service 
+    Example: getCategories():Observable<Category[]>{
+            const categoriesUrl = "http://localhost:3000/categories";
+            return this.httpClient.get<Category[]>(categoriesUrl);
+        }
+
+    5.3 Method in ui side 
+    Example:   getCategories(){
+                this.commonService.getCategories().subscribe(data =>{
+                this.categoryList = data;
+                console.log('categories: ',this.categoryList);
+                });
+            }
+
+    5.4 *ngFor in ui 
+    Example: <li *ngFor="let cat of categoryList">
+                <a href="#">{{cat.categoryName}} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </li>
+
+6. Create New product Method
+
+6.1 Create Service
+Example:  
+    createProduct(productBody:any): Observable<Product>{
+    const productUrl = 'http://localhost:3000/products';
+    return this.httpClient.post<Product>(productUrl,productBody);
+  }
+
+6.2 Create Product Object (Model)
+Example: 
+    export interface Product {
+    productId : number;
+    name : string;
+    price : number;
+    offerPrice : number,
+    productImage: string;
+    searchKeywords: string;
+    description: string;
+    category: string;
+    categoryId : number;
+    brand : string;
+    color : string;
+    size : number;
+    ratingAvg : number;
+    ratingCount : number;
+    stock : number;
+    dateCreated: string;
+    isAvailable: boolean;
+}
+
+6.3 
+
+
+

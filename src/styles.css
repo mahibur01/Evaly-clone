@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+.navbar {
+    padding: 0px !important;
+    height: 48px !important;
+}
+
+.custom-navbar{
+    padding: 0.7 rem !important;
+    height: 47px !important;
+    
+}
+
+.btn {
+    background-color: #c9151b !important;
+    border: none !important;
+}
+
+.custom-bdy{
+    padding-left: 71px !important;
+    padding-right: 71px !important;
+}
+
+.banner1{
+    height: 113px !important;
+    width: 100% !important;
+    padding: 3px 0 0 0;
+}
+
+.custom-slider{
+    height: 373px !important;
+    width: 100% !important;
+    /* padding: 14px !important; */
+}
+
+.custom-sidebar{
+    padding: 15px 0px 15px 15px !important;
+    border: 0px !important;
+}

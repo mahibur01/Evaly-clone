@@ -1,0 +1,129 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "name": "On Cloud Nine Pillow",
+      "price": 24.99,
+      "offerPrice": 24.99,
+      "productImage": "image-path",
+      "searchKeywords": "lorem, ipsum, dolor, ...",
+      "description": "Sociosqu facilisis duis ...",
+      "category": "Home>Home Decor>Pillows|Back In Stock",
+      "categoryId": "100",
+      "brand": "FabDecor",
+      "color": "White",
+      "size": "",
+      "ratingAvg": 4.2,
+      "ratingCount": 8,
+      "stock": 21,
+      "dateCreated": "2018-03-03 17:41:13",
+      "isAvailable": 1
+    },
+    {
+      "productId": 2,
+      "name": "Iphone",
+      "price": 24.99,
+      "offerPrice": 24.99,
+      "productImage": "image-path",
+      "searchKeywords": "lorem, ipsum, dolor, ...",
+      "description": "Sociosqu facilisis duis ...",
+      "category": "Home>Home Decor>Pillows|Back In Stock",
+      "categoryId": "102",
+      "brand": "FabDecor",
+      "color": "White",
+      "size": "",
+      "ratingAvg": 4.2,
+      "ratingCount": 8,
+      "stock": 21,
+      "dateCreated": "2018-03-03 17:41:13",
+      "isAvailable": 1
+    },
+    {
+      "productId": 3,
+      "name": "Pillow",
+      "price": 24.99,
+      "offerPrice": 24.99,
+      "productImage": "image-path",
+      "searchKeywords": "lorem, ipsum, dolor, ...",
+      "description": "Sociosqu facilisis duis ...",
+      "category": "Home>Home Decor>Pillows|Back In Stock",
+      "categoryId": "103",
+      "brand": "FabDecor",
+      "color": "White",
+      "size": "",
+      "ratingAvg": 4.2,
+      "ratingCount": 8,
+      "stock": 21,
+      "dateCreated": "2018-03-03 17:41:13",
+      "isAvailable": 1
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Smart TV & Android TV",
+      "description": "category description",
+      "categoryBanner": "banner1"
+    },
+    {
+      "id": 2,
+      "categoryName": "Desktop",
+      "description": "category description",
+      "categoryBanner": "banner2"
+    },
+    {
+      "id": 3,
+      "categoryName": "Motor Bike",
+      "description": "category description",
+      "categoryBanner": "banner3"
+    },
+    {
+      "id": 4,
+      "categoryName": "Speaker",
+      "description": "category description",
+      "categoryBanner": "banner2"
+    },
+    {
+      "id": 5,
+      "categoryName": "Freezer",
+      "description": "category description",
+      "categoryBanner": "banner3"
+    },
+    {
+      "id": 6,
+      "categoryName": "Refrigerator",
+      "description": "category description",
+      "categoryBanner": "banner3"
+    },
+    {
+      "id": 7,
+      "categoryName": "Split AC",
+      "description": "category description",
+      "categoryBanner": "banner2"
+    },
+    {
+      "id": 8,
+      "categoryName": "Laptop",
+      "description": "category description",
+      "categoryBanner": "banner3"
+    },
+    {
+      "id": 9,
+      "categoryName": "Smart Phone",
+      "description": "category description",
+      "categoryBanner": "banner3"
+    },
+    {
+      "id": 10,
+      "categoryName": "Microwave Oven",
+      "description": "category description",
+      "categoryBanner": "banner2"
+    }
+
+  ],
+
+  "profile": {
+    "name": "typicode"
+  }
+}
